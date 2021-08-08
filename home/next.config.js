@@ -1,5 +1,6 @@
 const { BLOG_URL } = process.env;
 
+console.log("BLOG_URL: ", BLOG_URL);
 module.exports = {
   images: {
     loader: "imgix",
