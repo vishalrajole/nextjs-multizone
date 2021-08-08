@@ -1,3 +1,7 @@
 module.exports = {
-  basePath: '/blog',
-}
+  basePath: "/blog",
+  images: {
+    loader: "imgix",
+    path: "",
+  },
+};
