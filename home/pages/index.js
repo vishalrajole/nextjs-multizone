@@ -1,10 +1,13 @@
-import Link from 'next/link'
-import dynamic from 'next/dynamic'
-import Image from 'next/image'
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import Image from "next/image";
 
-const Header = dynamic(import('../components/Header'))
+const Header = dynamic(import("../components/Header"));
 
 export default function Home() {
+  console.log("BLOG_URL: ", process.env.BLOG_URL);
+  console.log("process: ", process.env);
+
   return (
     <div>
       <Header />
@@ -24,5 +27,5 @@ export default function Home() {
         height={160}
       />
     </div>
-  )
+  );
 }
