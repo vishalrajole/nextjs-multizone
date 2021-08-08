@@ -1,4 +1,9 @@
 {
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:prod": "build:blog && build:home",
+    "build:blog": "cd blog && yarn build",
+    "build:home": "cd home && yarn build"
+  }
 }
