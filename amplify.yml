@@ -1,9 +1,6 @@
 version: 1
 applications:
   - appRoot: home
-    env:
-      variables:
-        key: value
     frontend:
       phases:
         preBuild:
@@ -15,7 +12,6 @@ applications:
       artifacts:
         files:
           - "**/*"
-        discard-paths: yes
         baseDirectory: out
       cache:
         paths:
@@ -32,7 +28,6 @@ applications:
       artifacts:
         files:
           - "**/*"
-        discard-paths: yes
         baseDirectory: out
       cache:
         paths:
