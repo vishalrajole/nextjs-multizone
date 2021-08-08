@@ -8,7 +8,6 @@ applications:
       phases:
         preBuild:
           commands:
-            - cd home
             - yarn
         build:
           commands:
@@ -17,7 +16,7 @@ applications:
         files:
           - "**/*"
         discard-paths: yes
-        baseDirectory: ./next
+        baseDirectory: .next
       cache:
         paths:
           - node_modules/**/*
@@ -26,7 +25,6 @@ applications:
       phases:
         preBuild:
           commands:
-            - cd blog
             - yarn
         build:
           commands:
@@ -35,7 +33,7 @@ applications:
         files:
           - "**/*"
         discard-paths: yes
-        baseDirectory: ./next
+        baseDirectory: .next
       cache:
         paths:
           - node_modules/**/*
