@@ -8,6 +8,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - cd home
             - yarn
         build:
           commands:
@@ -25,6 +26,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - cd blog
             - yarn
         build:
           commands:
